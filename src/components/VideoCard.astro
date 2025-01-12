@@ -1,0 +1,29 @@
+---
+interface Props {
+  id: string;
+  name: string;
+  url_img: string;
+  description: string;
+  categories: string[];
+}
+
+const { id, name, url_img, description, categories } = Astro.props;
+const lang = Astro.url.pathname.split('/')[1];
+---
+
+<a href={`/${lang}/videos/${id}`} class="block">
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-colors duration-300 hover:shadow-xl">
+    <img src={url_img} alt={name} class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">{name}</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
+      <div class="flex flex-wrap gap-2">
+        {categories.map(category => (
+          <span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-sm">
+            {category}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</a>

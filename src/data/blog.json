@@ -1,0 +1,62 @@
+{
+  "en": {
+    "posts": [
+      {
+        "id": "p1",
+        "title": "New PS5 Pro Rumors",
+        "tags": ["PlayStation", "Hardware", "News"],
+        "img_url": "https://picsum.photos/800/400",
+        "description": "Latest rumors about the upcoming PS5 Pro specifications and features",
+        "content": "Full article content here...",
+        "seo": {
+          "title": "PS5 Pro Rumors: Specs, Features, and Release Date - LaRepublicaGamer",
+          "description": "Get the latest information about the upcoming PS5 Pro, including specifications, new features, and potential release date.",
+          "keywords": "PS5 Pro, PlayStation, gaming hardware, console gaming"
+        }
+      },
+      {
+        "id": "p2",
+        "title": "GTA 6 Release Date",
+        "tags": ["Rockstar", "Action", "News"],
+        "img_url": "https://picsum.photos/800/401",
+        "description": "Rockstar Games finally announces GTA 6 release window",
+        "content": "Full article content here...",
+        "seo": {
+          "title": "GTA 6 Release Date Announced - LaRepublicaGamer",
+          "description": "Rockstar Games has finally revealed the release window for the highly anticipated GTA 6. Get all the details here.",
+          "keywords": "GTA 6, Rockstar Games, action games, release date"
+        }
+      }
+    ]
+  },
+  "es": {
+    "posts": [
+      {
+        "id": "p1",
+        "title": "Rumores del PS5 Pro",
+        "tags": ["PlayStation", "Hardware", "Noticias"],
+        "img_url": "https://picsum.photos/800/400",
+        "description": "Últimos rumores sobre las especificaciones y características del próximo PS5 Pro",
+        "content": "Contenido completo del artículo aquí...",
+        "seo": {
+          "title": "Rumores PS5 Pro: Especificaciones, Características y Fecha de Lanzamiento - LaRepublicaGamer",
+          "description": "Obtén la última información sobre el próximo PS5 Pro, incluyendo especificaciones, nuevas características y posible fecha de lanzamiento.",
+          "keywords": "PS5 Pro, PlayStation, hardware gaming, consolas"
+        }
+      },
+      {
+        "id": "p2",
+        "title": "Fecha de Lanzamiento de GTA 6",
+        "tags": ["Rockstar", "Acción", "Noticias"],
+        "img_url": "https://picsum.photos/800/401",
+        "description": "Rockstar Games finalmente anuncia la ventana de lanzamiento de GTA 6",
+        "content": "Contenido completo del artículo aquí...",
+        "seo": {
+          "title": "Anunciada la Fecha de Lanzamiento de GTA 6 - LaRepublicaGamer",
+          "description": "Rockstar Games finalmente ha revelado la ventana de lanzamiento del muy esperado GTA 6. Obtén todos los detalles aquí.",
+          "keywords": "GTA 6, Rockstar Games, juegos de acción, fecha de lanzamiento"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="relative bg-gradient-to-br from-primary to-secondary py-20 light:text-black">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 ">
+        La Republica Gamer
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">
+        {lang === 'es' 
+          ? 'Te invitamos a formar parte de la mejor comunidad si te gustan los videojuegos' 
+          : 'We invite you to be part of the best community if you like video games'}
+      </p>
+      <a
+        href="https://bit.ly/LRGcl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block dark:bg-black text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105"
+      >
+        {lang === 'es' ? 'Únete a la Comunidad' : 'Join the Community'}
+      </a>
+    </div>
+  </div>
+  
+</section>

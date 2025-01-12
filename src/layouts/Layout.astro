@@ -1,0 +1,85 @@
+---
+import { getLangFromUrl } from '../i18n/utils';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '@fontsource/inter';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title, description, keywords } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+
+// Default SEO values
+const defaultDescription = lang === 'es' 
+  ? 'Tu destino definitivo para noticias, reseñas y contenido gaming'
+  : 'Your ultimate destination for gaming news, reviews, and content';
+
+const defaultKeywords = lang === 'es'
+  ? 'gaming, videojuegos, noticias de juegos, reseñas de juegos, contenido gaming'
+  : 'gaming, video games, game news, game reviews, gaming content';
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description || defaultDescription} />
+    <meta name="keywords" content={keywords || defaultKeywords} />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || defaultDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LaRepublicaGamer" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description || defaultDescription} />
+  </head>
+  <body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --primary: theme('colors.blue.600');
+    --secondary: theme('colors.gray.200');
+  }
+
+  :root.dark {
+    --primary: theme('colors.blue.400');
+    --secondary: theme('colors.gray.800');
+  }
+
+  :root.red {
+    --primary: theme('colors.red.600');
+    --secondary: theme('colors.red.100');
+  }
+
+  :root.blue {
+    --primary: theme('colors.blue.600');
+    --secondary: theme('colors.blue.100');
+  }
+
+  :root.green {
+    --primary: theme('colors.green.600');
+    --secondary: theme('colors.green.100');
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+</style>

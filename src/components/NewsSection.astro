@@ -1,0 +1,80 @@
+---
+import { getLangFromUrl } from '../i18n/utils';
+import blog from '../data/blog.json';
+
+const lang = getLangFromUrl(Astro.url);
+const posts = blog[lang as keyof typeof blog].posts;
+
+// Get unique tags
+const allTags = [...new Set(posts.flatMap(post => post.tags))];
+---
+
+<section class="py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+      {lang === 'es' ? 'Últimas Noticias' : 'Latest News'}
+    </h2>
+
+    <div class="flex flex-wrap gap-2 justify-center mb-8" id="tagFilters">
+      <button
+        class="tag-filter bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity active"
+        data-tag="all"
+      >
+        {lang === 'es' ? 'Todos' : 'All'}
+      </button>
+      {allTags.map(tag => (
+        <button
+          class="tag-filter bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+          data-tag={tag}
+        >
+          {tag}
+        </button>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="newsGrid">
+      {posts.map(post => (
+        <article class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-tags={post.tags.join(',')}>
+          <img src={post.img_url} alt={post.title} class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">{post.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">{post.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {post.tags.map(tag => (
+                <span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-sm">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const tagFilters = document.querySelectorAll('.tag-filter');
+  const newsGrid = document.getElementById('newsGrid');
+  const articles = newsGrid?.querySelectorAll('article');
+
+  tagFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+      const tag = filter.getAttribute('data-tag');
+      
+      // Update active state of filters
+      tagFilters.forEach(f => f.classList.remove('active', 'bg-primary', 'text-white'));
+      filter.classList.add('active', 'bg-primary', 'text-white');
+
+      // Filter articles
+      articles?.forEach(article => {
+        const articleTags = article.getAttribute('data-tags')?.split(',') || [];
+        if (tag === 'all' || articleTags.includes(tag)) {
+          article.style.display = 'block';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

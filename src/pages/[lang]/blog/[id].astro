@@ -1,0 +1,56 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getLangFromUrl } from '../../../i18n/utils';
+import { languages } from '../../../i18n/ui';
+import blog from '../../../data/blog.json';
+
+export function getStaticPaths() {
+  return Object.keys(languages).flatMap((lang) => {
+    const posts = blog[lang as keyof typeof blog].posts;
+    return posts.map((post) => ({
+      params: { lang, id: post.id },
+      props: { post },
+    }));
+  });
+}
+
+const lang = getLangFromUrl(Astro.url);
+const { post } = Astro.props;
+---
+
+<Layout 
+  title={post.seo.title}
+  description={post.seo.description}
+  keywords={post.seo.keywords}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <img 
+        src={post.img_url} 
+        alt={post.title} 
+        class="w-full h-64 object-cover rounded-lg mb-6"
+      />
+
+      <h1 class="text-4xl font-bold mb-6">{post.title}</h1>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        {post.tags.map((tag: string) => (
+          <span class="bg-primary/10 text-primary px-3 py-1 rounded-full">
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <div class="prose dark:prose-invert max-w-none mb-8">
+        <p class="text-lg">{post.content}</p>
+      </div>
+
+      <a
+        href={`/${lang}/blog`}
+        class="inline-block bg-primary text-black dark:text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
+      >
+        {lang === 'es' ? 'Volver' : 'Back'}
+      </a>
+    </div>
+  </main>
+</Layout>

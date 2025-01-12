@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { languages } from '../../i18n/ui';
+import videos from '../../data/videos.json';
+import blog from '../../data/blog.json';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const langVideos = videos[lang as keyof typeof videos].videos;
+const posts = blog[lang as keyof typeof blog].posts;
+---
+
+<Layout title={t('home.title')}>
+  <Hero />
+  <main class="container mx-auto px-4 py-8">
+    <section class="mb-16">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-bold">{lang === 'es' ? 'Videos Destacados' : 'Featured Videos'}</h2>
+        <a href={`/${lang}/videos`} class="text-primary hover:underline">
+          {lang === 'es' ? 'Ver todos' : 'View all'}
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {langVideos.slice(0, 3).map((video) => (
+          <VideoCard {...video} />
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-bold">{lang === 'es' ? 'Últimas Noticias' : 'Latest News'}</h2>
+        <a href={`/${lang}/blog`} class="text-primary hover:underline">
+          {lang === 'es' ? 'Ver todas' : 'View all'}
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.slice(0, 3).map((post) => (
+          <NewsCard {...post} />
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

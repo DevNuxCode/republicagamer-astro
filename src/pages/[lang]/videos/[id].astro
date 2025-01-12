@@ -1,0 +1,67 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getLangFromUrl } from '../../../i18n/utils';
+import { languages } from '../../../i18n/ui';
+import videos from '../../../data/videos.json';
+
+export function getStaticPaths() {
+  return Object.keys(languages).flatMap((lang) => {
+    const langVideos = videos[lang as keyof typeof videos].videos;
+    return langVideos.map((video) => ({
+      params: { lang, id: video.id },
+      props: { video },
+    }));
+  });
+}
+
+const lang = getLangFromUrl(Astro.url);
+const { video } = Astro.props;
+---
+
+<Layout 
+  title={video.seo.title}
+  description={video.seo.description}
+  keywords={video.seo.keywords}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold mb-6">{video.name}</h1>
+      
+      <div class="aspect-video mb-6">
+        <iframe
+          src={video.embed}
+          class="w-full h-full rounded-lg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        {video.categories.map((category: string) => (
+          <span class="bg-primary/10 text-primary px-3 py-1 rounded-full">
+            {category}
+          </span>
+        ))}
+      </div>
+
+      <p class="text-lg mb-8">{video.description}</p>
+
+      <div class="flex justify-between items-center">
+        <a
+          href={`/${lang}/videos`}
+          class="bg-primary text-black dark:text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
+        >
+          {lang === 'es' ? 'Volver' : 'Back'}
+        </a>
+        <a
+          href={video.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-red-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
+        >
+          {lang === 'es' ? 'Ver en YouTube' : 'Watch on YouTube'}
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

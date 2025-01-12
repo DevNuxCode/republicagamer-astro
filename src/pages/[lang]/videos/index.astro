@@ -1,0 +1,73 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import VideoCard from '../../../components/VideoCard.astro';
+import { getLangFromUrl } from '../../../i18n/utils';
+import { languages } from '../../../i18n/ui';
+import videos from '../../../data/videos.json';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const langVideos = videos[lang as keyof typeof videos].videos;
+
+// Get unique categories
+const allCategories = [...new Set(langVideos.flatMap(video => video.categories))];
+---
+
+<Layout title={lang === 'es' ? 'Videos - LaRepublicaGamer' : 'Videos - LaRepublicaGamer'}>
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">
+      {lang === 'es' ? 'Videos' : 'Videos'}
+    </h1>
+
+    <div class="flex flex-wrap gap-2 justify-center mb-8" id="categoryFilters">
+      <button
+        class="category-filter bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity active"
+        data-category="all"
+      >
+        {lang === 'es' ? 'Todos' : 'All'}
+      </button>
+      {allCategories.map(category => (
+        <button
+          class="category-filter bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+          data-category={category}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="videosGrid">
+      {langVideos.map((video) => (
+        <div data-categories={video.categories.join(',')} class="video-item">
+          <VideoCard {...video} />
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const categoryFilters = document.querySelectorAll('.category-filter');
+  const videoItems = document.querySelectorAll('.video-item');
+
+  categoryFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+      const category = filter.getAttribute('data-category');
+      
+      categoryFilters.forEach(f => f.classList.remove('active', 'bg-primary', 'text-white'));
+      filter.classList.add('active', 'bg-primary', 'text-white');
+
+      videoItems.forEach(item => {
+        const itemCategories = item.getAttribute('data-categories')?.split(',') || [];
+        if (category === 'all' || itemCategories.includes(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

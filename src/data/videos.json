@@ -1,0 +1,94 @@
+{
+  "en": {
+    "videos": [
+      {
+        "id": "v1",
+        "name": "Razer - Fracture - Valorant Clips",
+        "url_img": "https://ligadecracks.com/wp-content/uploads/2022/01/Raze_Valorant.webp",
+        "url": "https://www.youtube.com/watch?v=I4lZHxuMnME",
+        "embed": "https://www.youtube.com/embed/I4lZHxuMnME?si=MA1Im_fjy4WEGvnE",
+        "description": "Valorant competitive match compilation broadcast live ",
+        "categories": ["Valorant", "Action", "PC"],
+        "seo": {
+          "title": "Razer - Fracture - Valorant Clips - LaRepublicaGamer",
+          "description": "Watch the details of the entire game live through my twitch.tv/republicagamercl.",
+          "keywords": "game review, gaming, PC games, action games"
+        }
+      },
+      {
+        "id": "v2",
+        "name": "SuperSeries: Skill up [CAP #03] - VALORANT",
+        "url_img": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/valorant-pride-1.jpg",
+        "url": "https://www.youtube.com/watch?v=gI-dN2T48vU",
+        "embed": "https://www.youtube.com/embed/gI-dN2T48vU?si=0bKRRHPHFP0X17pV",
+        "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !",
+        "categories": ["Valorant", "Shooting", "PC", "SuperSeries"],
+        "seo": {
+          "title": "SuperSeries: Mejorando Habilidades [CAP #03] - VALORANT - LaRepublicaGamer",
+          "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !.",
+          "keywords": "gameplay tutorial, gaming guide, RPG, console gaming"
+        }
+      },
+      {
+        "id": "v3",
+        "name": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8]",
+        "url_img": "/valorant_beta.jpg",
+        "url": "https://www.youtube.com/watch?v=e1ErXujUDE0",
+        "embed": "https://www.youtube.com/embed/e1ErXujUDE0?si=w-SRzxCu2hrOI50e",
+        "description": "Yesterday the premiere began and we won our second game against the GetGriddy team. Full game of new first victory as a team in Valorant Beta Premier. Excellent game. On Monday we continue. Greetings",
+        "categories": ["Valorant", "Shooting", "PC", "Beta Premier"],
+        "seo": {
+          "title": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8] - LaRepublicaGamer",
+          "description": "Yesterday the premiere began and we won our second game against the GetGriddy team. Full game of new first victory as a team in Valorant Beta Premier. Excellent game. On Monday we continue. Greetings",
+          "keywords": "gameplay tutorial, gaming guide, RPG, console gaming"
+        }
+      }
+    ]
+  },
+  "es": {
+    "videos": [
+      {
+        "id": "v1",
+        "name": "Razer - Fracture - Valorant Clips",
+        "url_img": "https://ligadecracks.com/wp-content/uploads/2022/01/Raze_Valorant.webp",
+        "url": "https://www.youtube.com/watch?v=I4lZHxuMnME",
+        "embed": "https://www.youtube.com/embed/I4lZHxuMnME?si=MA1Im_fjy4WEGvnE",
+        "description": "Recopilacion de partida competitiva de Valorant emitida en directo ",
+        "categories": ["Valorant", "Action", "PC"],
+        "seo": {
+          "title": "Razer - Fracture - Valorant Clips - LaRepublicaGamer",
+          "description": "Mira los detalles de toda la partida en directo a traves de mi twitch.tv/republicagamercl.",
+          "keywords": "game review, gaming, PC games, action games"
+        }
+      },
+      {
+        "id": "v2",
+        "name": "SuperSeries: Mejorando Habilidades [CAP #03] - VALORANT",
+        "url_img": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/valorant-pride-1.jpg",
+        "url": "https://www.youtube.com/watch?v=gI-dN2T48vU",
+        "embed": "https://www.youtube.com/embed/gI-dN2T48vU?si=0bKRRHPHFP0X17pV",
+        "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !",
+        "categories": ["Valorant", "Shooting", "PC", "SuperSeries"],
+        "seo": {
+          "title": "SuperSeries: Mejorando Habilidades [CAP #03] - VALORANT - LaRepublicaGamer",
+          "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !.",
+          "keywords": "gameplay tutorial, gaming guide, RPG, console gaming"
+        }
+      },
+      {
+        "id": "v3",
+        "name": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8]",
+        "url_img": "/valorant_beta.jpg",
+        "url": "https://www.youtube.com/watch?v=e1ErXujUDE0",
+        "embed": "https://www.youtube.com/embed/e1ErXujUDE0?si=w-SRzxCu2hrOI50e",
+        "description": "Yesterday the premiere began and we won our second game against the GetGriddy team. Full game of new first victory as a team in Valorant Beta Premier. Excellent game. On Monday we continue. Greetings",
+        "categories": ["Valorant", "Shooting", "PC", "Beta Premier"],
+        "seo": {
+          "title": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8]",
+          "description": "El día de ayer se dio comienzo a la premier y ganamos nuestra segunda partida contra el equipo de GetGriddy. Partida completa de nueva primera victoria como equipo en Valorant Beta Premier. Excelente partida. El lunes seguimos. Saludos",
+          "keywords": "Valorant, Beta Premier, Shooting, Online"
+        }
+      }
+    ]
+  }
+}

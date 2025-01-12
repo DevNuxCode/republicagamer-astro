@@ -1,0 +1,73 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import NewsCard from '../../../components/NewsCard.astro';
+import { getLangFromUrl } from '../../../i18n/utils';
+import { languages } from '../../../i18n/ui';
+import blog from '../../../data/blog.json';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const posts = blog[lang as keyof typeof blog].posts;
+
+// Get unique tags
+const allTags = [...new Set(posts.flatMap(post => post.tags))];
+---
+
+<Layout title={lang === 'es' ? 'Noticias - LaRepublicaGamer' : 'News - LaRepublicaGamer'}>
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">
+      {lang === 'es' ? 'Noticias' : 'News'}
+    </h1>
+
+    <div class="flex flex-wrap gap-2 justify-center mb-8" id="tagFilters">
+      <button
+        class="tag-filter bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity active"
+        data-tag="all"
+      >
+        {lang === 'es' ? 'Todos' : 'All'}
+      </button>
+      {allTags.map(tag => (
+        <button
+          class="tag-filter bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+          data-tag={tag}
+        >
+          {tag}
+        </button>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="newsGrid">
+      {posts.map(post => (
+        <div data-tags={post.tags.join(',')} class="news-item">
+          <NewsCard {...post} />
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const tagFilters = document.querySelectorAll('.tag-filter');
+  const newsItems = document.querySelectorAll('.news-item');
+
+  tagFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+      const tag = filter.getAttribute('data-tag');
+      
+      tagFilters.forEach(f => f.classList.remove('active', 'bg-primary', 'text-white'));
+      filter.classList.add('active', 'bg-primary', 'text-white');
+
+      newsItems.forEach(item => {
+        const itemTags = item.getAttribute('data-tags')?.split(',') || [];
+        if (tag === 'all' || itemTags.includes(tag)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
