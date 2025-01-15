@@ -3,15 +3,15 @@
     "posts": [
       {
         "id": "p1",
-        "title": "New PS5 Pro Rumors",
-        "tags": ["PlayStation", "Hardware", "News"],
-        "img_url": "https://picsum.photos/800/400",
-        "description": "Latest rumors about the upcoming PS5 Pro specifications and features",
-        "content": "Full article content here...",
+        "title": "The keys to success in Valorant: Tips from professionals",
+        "tags": ["Shooter", "PC", "Valorant"],
+        "img_url": "/valorant_jett.jpg",
+        "description": "Know the general things to have a good performance in this tactical shooter.",
+        "content": "Valorant, Riot Games' tactical shooter, has taken the esports scene by storm thanks to its mix of precise mechanics and unique abilities per agent. If you are looking to improve your performance, these tips from professionals will help you take a quality leap: Control the economy: Money management is key in Valorant. Knowing when to save and when to invest in weapons and shields makes the difference between a losing streak or a winning streak. Don't hesitate to echo if your team is short on resources. Communicate effectively: Keep information accurate and clear. Avoid saturating the voice channel with irrelevant details and prioritize warnings about enemies spotted, rotations, and utility used by the opposing team. Know the maps in depth: Knowing the common positions, the angles where enemies are positioned and the rotation routes allows you to anticipate rival movements and gain advantage in duels. Practice shooting: Aim is essential. Spend time training in practice mode and use custom maps to improve your accuracy and reflexes. Choose agents based on team role: Even if you have a favorite agent, sometimes it is better to opt for a character that complements the team composition. Adapting to collective needs is crucial at high levels.",
         "seo": {
-          "title": "PS5 Pro Rumors: Specs, Features, and Release Date - LaRepublicaGamer",
-          "description": "Get the latest information about the upcoming PS5 Pro, including specifications, new features, and potential release date.",
-          "keywords": "PS5 Pro, PlayStation, gaming hardware, console gaming"
+          "title": "Las claves del éxito en Valorant: Consejos de profesionales - LaRepublicaGamer",
+          "description": "Conoce lo general para tener un buen desempeño en este shooter tactico",
+          "keywords": "mejores miras valorant, PlayStation, gaming hardware, console gaming"
         }
       },
       {
@@ -33,6 +33,19 @@
     "posts": [
       {
         "id": "p1",
+        "title": "Las claves del éxito en Valorant: Consejos de profesionales",
+        "tags": ["Shooter", "PC", "Valorant"],
+        "img_url": "/valorant_jett.jpg",
+        "description": "Conoce lo general para tener un buen desempeño en este shooter tactico.",
+        "content": "Valorant, el shooter táctico de Riot Games, ha conquistado la escena de los esports gracias a su mezcla de mecánicas precisas y habilidades únicas por agente. Si estás buscando mejorar tu rendimiento, estos consejos de profesionales te ayudarán a dar un salto de calidad: Controla la economía: La gestión del dinero es clave en Valorant. Saber cuándo ahorrar y cuándo invertir en armas y escudos marca la diferencia entre una racha de derrotas o victorias. No dudes en hacer un eco si tu equipo está corto de recursos. Comunícate de manera efectiva: Mantén la información precisa y clara. Evita saturar el canal de voz con detalles irrelevantes y prioriza los avisos sobre enemigos avistados, rotaciones y utilidad empleada por el equipo contrario. Conoce a fondo los mapas: Saber las posiciones comunes, los ángulos donde se colocan los enemigos y las rutas de rotación te permite anticiparte a los movimientos rivales y ganar ventaja en los duelos. Practica el disparo: La puntería es fundamental. Dedica tiempo a entrenar en el modo de práctica y usa mapas personalizados para mejorar tu precisión y reflejos. Elige agentes según el rol del equipo: Aunque tengas un agente favorito, a veces es mejor optar por un personaje que complemente la composición del equipo. Adaptarte a las necesidades colectivas es crucial en niveles altos.",
+        "seo": {
+          "title": "Las claves del éxito en Valorant: Consejos de profesionales - LaRepublicaGamer",
+          "description": "Conoce lo general para tener un buen desempeño en este shooter tactico",
+          "keywords": "mejores miras valorant, PlayStation, gaming hardware, console gaming"
+        }
+      },
+      {
+        "id": "p3",
         "title": "Rumores del PS5 Pro",
         "tags": ["PlayStation", "Hardware", "Noticias"],
         "img_url": "https://picsum.photos/800/400",

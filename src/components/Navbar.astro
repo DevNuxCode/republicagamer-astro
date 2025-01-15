@@ -9,9 +9,16 @@ const currentPath = Astro.url.pathname;
 <nav class="w-full p-4 transition-colors duration-300">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
     <div class="flex items-center space-x-2">
-      <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-      </svg>
+      <img 
+        src="/logo_negro.png" 
+        alt="LaRepublicaMer Logo" 
+        class="w-8 h-8 block dark:hidden"
+      />
+      <img 
+        src="/logo_blanco.png" 
+        alt="LaRepublicagamer Logo" 
+        class="w-8 h-8 hidden dark:block"
+      />
       <a href={`/${lang}`} class="text-xl font-bold">LaRepublicaGamer</a>
     </div>
 
@@ -41,7 +48,7 @@ const currentPath = Astro.url.pathname;
         <select id="themeSelector" class="rounded px-2 py-1 bg-white dark:bg-gray-700">
           <option value="light">{t('nav.theme.light')}</option>
           <option value="dark">{t('nav.theme.dark')}</option>
-          
+         
         </select>
         <div class="space-x-2">
           <a href="/en" class={lang === 'en' ? 'font-bold' : ''}>EN</a>

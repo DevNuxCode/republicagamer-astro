@@ -18,6 +18,20 @@ const allCategories = [...new Set(langVideos.flatMap(video => video.categories))
 
 <Layout title={lang === 'es' ? 'Videos - LaRepublicaGamer' : 'Videos - LaRepublicaGamer'}>
   <main class="container mx-auto px-4 py-8">
+    <div class="logoprincipal"> 
+      <center>
+    <img 
+      src="/logo_negro.png" 
+      alt="LaRepublicaMer Logo" 
+      class="w-30 h-30 block dark:hidden"
+    />
+    <img 
+      src="/logo_blanco.png" 
+      alt="LaRepublicagamer Logo" 
+      class="w-30 h-30 hidden dark:block"
+    />
+      </center>
+    </div>
     <h1 class="text-4xl font-bold text-center mb-8">
       {lang === 'es' ? 'Videos' : 'Videos'}
     </h1>

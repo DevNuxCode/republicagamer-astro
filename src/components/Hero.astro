@@ -6,7 +6,23 @@ const t = useTranslations(lang);
 
 <section class="relative bg-gradient-to-br from-primary to-secondary py-20 light:text-black">
   <div class="container mx-auto px-4">
+    <div class="logoprincipal"> 
+      <center>
+    <img 
+      src="/logo_negro.png" 
+      alt="LaRepublicaMer Logo" 
+      class="w-30 h-30 block dark:hidden"
+    />
+    <img 
+      src="/logo_blanco.png" 
+      alt="LaRepublicagamer Logo" 
+      class="w-30 h-30 hidden dark:block"
+    />
+      </center>
+    </div>
+
     <div class="max-w-3xl mx-auto text-center">
+      
       <h1 class="text-5xl md:text-6xl font-bold mb-6 ">
         La Republica Gamer
       </h1>
@@ -19,7 +35,7 @@ const t = useTranslations(lang);
         href="https://bit.ly/LRGcl"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-block dark:bg-black text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105"
+        class="inline-block bg-slate-400 dark:bg-black text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105"
       >
         {lang === 'es' ? 'Únete a la Comunidad' : 'Join the Community'}
       </a>

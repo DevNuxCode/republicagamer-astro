@@ -8,10 +8,13 @@ const t = useTranslations(lang);
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Logo and Slogan -->
-       
       <div class="space-y-4">
         <div class="flex items-center space-x-2">
-          <img src="/logo_blanco.png" alt="Logo La Republica Gamer Blanco "/ width="100" height="100"> 
+          <img 
+            src="/logo_blanco.png" 
+            alt="LaRepublicaGamer Logo" 
+            class="w-8 h-8"
+          />
           <span class="text-xl font-bold">LaRepublicaGamer</span>
         </div>
         <p class="text-gray-400">
@@ -47,7 +50,22 @@ const t = useTranslations(lang);
       <div>
         <h3 class="text-lg font-bold mb-4">{lang === 'es' ? 'Redes Sociales' : 'Social Media'}</h3>
         <ul class="space-y-2">
-          <li>
+          
+            <li>
+                <a 
+                  href="https://twitch.tv/larepublicagamercl" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center space-x-2"
+                >
+                  <span>Twitch</span>
+                </a>
+              </li>
+          
+          
+          
+          
+            <li>
             <a 
               href="https://discord.gg/4n5PxHBahT" 
               target="_blank" 
@@ -96,7 +114,7 @@ const t = useTranslations(lang);
         <div class="space-y-2 text-gray-400">
           <p>{lang === 'es' ? 'Únete a nuestra comunidad en Discord' : 'Join our Discord community'}</p>
           <a 
-            href="https://bit.ly/LRGcl" 
+            href="https://discord.gg/4n5PxHBahT" 
             target="_blank" 
             rel="noopener noreferrer"
             class="inline-block bg-primary text-white px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
@@ -108,7 +126,7 @@ const t = useTranslations(lang);
     </div>
 
     <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-      <p>&copy; 2025 LaRepublicaGamer. {t('footer.rights')}</p>
+      <p>&copy; 2025 LaRepublicaGamer ®. {t('footer.rights')}</p>
     </div>
   </div>
 </footer>
