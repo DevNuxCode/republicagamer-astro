@@ -16,15 +16,15 @@
       },
       {
         "id": "p2",
-        "title": "GTA 6 Release Date",
-        "tags": ["Rockstar", "Action", "News"],
-        "img_url": "https://picsum.photos/800/401",
+        "title": "Counter-Strike 2: Todo lo que debes saber sobre su jugabilidad y mejoras gráficas",
+        "tags": ["Shooter", "Action", "CS"],
+        "img_url": "/counterstrike.jpg",
         "description": "Rockstar Games finally announces GTA 6 release window",
-        "content": "Full article content here...",
+        "content": "Con la llegada de Counter-Strike 2, Valve ha dado un gran paso en la evolución de uno de los shooters más icónicos. Esta nueva versión no solo trae mejoras visuales, sino también cambios importantes en la jugabilidad que los veteranos y novatos deben conocer: Gráficos mejorados con Source 2: Counter-Strike 2 aprovecha al máximo el motor Source 2, ofreciendo texturas más detalladas, una iluminación realista y mejores efectos de partículas. Esto no solo mejora la estética del juego, sino también la inmersión en cada partida. Humo dinámico: Uno de los cambios más destacados es el comportamiento del humo, que ahora es volumétrico y reacciona de manera realista a las explosiones y disparos. Esto afecta directamente la estrategia y las tácticas en cada ronda. Tick rate mejorado: Valve ha eliminado la dependencia del tick rate tradicional gracias a un nuevo sistema de actualización de servidores que garantiza una respuesta más precisa y fluida en los disparos y movimientos. Interfaz renovada: La interfaz ha sido actualizada para ser más intuitiva y moderna, facilitando el acceso a información relevante durante las partidas. Nuevos efectos sonoros: Los sonidos también han sido mejorados, ofreciendo una experiencia auditiva más realista que permite identificar mejor la posición de los enemigos. Counter-Strike 2 promete mantener la esencia clásica del juego mientras introduce innovaciones que redefinen la experiencia de los jugadores.",
         "seo": {
-          "title": "GTA 6 Release Date Announced - LaRepublicaGamer",
-          "description": "Rockstar Games has finally revealed the release window for the highly anticipated GTA 6. Get all the details here.",
-          "keywords": "GTA 6, Rockstar Games, action games, release date"
+          "title": "Counter-Strike 2: Todo lo que debes saber sobre su jugabilidad y mejoras gráficas - LaRepublicaGamer",
+          "description": "Con la llegada de Counter-Strike 2, Valve ha dado un gran paso en la evolución de uno de los shooters más icónicos.",
+          "keywords": "counter strike, game play, action games, release date"
         }
       }
     ]
@@ -45,29 +45,16 @@
         }
       },
       {
-        "id": "p3",
-        "title": "Rumores del PS5 Pro",
-        "tags": ["PlayStation", "Hardware", "Noticias"],
-        "img_url": "https://picsum.photos/800/400",
-        "description": "Últimos rumores sobre las especificaciones y características del próximo PS5 Pro",
-        "content": "Contenido completo del artículo aquí...",
-        "seo": {
-          "title": "Rumores PS5 Pro: Especificaciones, Características y Fecha de Lanzamiento - LaRepublicaGamer",
-          "description": "Obtén la última información sobre el próximo PS5 Pro, incluyendo especificaciones, nuevas características y posible fecha de lanzamiento.",
-          "keywords": "PS5 Pro, PlayStation, hardware gaming, consolas"
-        }
-      },
-      {
         "id": "p2",
-        "title": "Fecha de Lanzamiento de GTA 6",
-        "tags": ["Rockstar", "Acción", "Noticias"],
-        "img_url": "https://picsum.photos/800/401",
-        "description": "Rockstar Games finalmente anuncia la ventana de lanzamiento de GTA 6",
-        "content": "Contenido completo del artículo aquí...",
+        "title": "Counter-Strike 2: Todo lo que debes saber sobre su jugabilidad y mejoras gráficas",
+        "tags": ["Shooter", "Action", "CS"],
+        "img_url": "/counterstrike.jpg",
+        "description": "Rockstar Games finally announces GTA 6 release window",
+        "content": "Con la llegada de Counter-Strike 2, Valve ha dado un gran paso en la evolución de uno de los shooters más icónicos. Esta nueva versión no solo trae mejoras visuales, sino también cambios importantes en la jugabilidad que los veteranos y novatos deben conocer: Gráficos mejorados con Source 2: Counter-Strike 2 aprovecha al máximo el motor Source 2, ofreciendo texturas más detalladas, una iluminación realista y mejores efectos de partículas. Esto no solo mejora la estética del juego, sino también la inmersión en cada partida. Humo dinámico: Uno de los cambios más destacados es el comportamiento del humo, que ahora es volumétrico y reacciona de manera realista a las explosiones y disparos. Esto afecta directamente la estrategia y las tácticas en cada ronda. Tick rate mejorado: Valve ha eliminado la dependencia del tick rate tradicional gracias a un nuevo sistema de actualización de servidores que garantiza una respuesta más precisa y fluida en los disparos y movimientos. Interfaz renovada: La interfaz ha sido actualizada para ser más intuitiva y moderna, facilitando el acceso a información relevante durante las partidas. Nuevos efectos sonoros: Los sonidos también han sido mejorados, ofreciendo una experiencia auditiva más realista que permite identificar mejor la posición de los enemigos. Counter-Strike 2 promete mantener la esencia clásica del juego mientras introduce innovaciones que redefinen la experiencia de los jugadores.",
         "seo": {
-          "title": "Anunciada la Fecha de Lanzamiento de GTA 6 - LaRepublicaGamer",
-          "description": "Rockstar Games finalmente ha revelado la ventana de lanzamiento del muy esperado GTA 6. Obtén todos los detalles aquí.",
-          "keywords": "GTA 6, Rockstar Games, juegos de acción, fecha de lanzamiento"
+          "title": "Counter-Strike 2: Todo lo que debes saber sobre su jugabilidad y mejoras gráficas - LaRepublicaGamer",
+          "description": "Con la llegada de Counter-Strike 2, Valve ha dado un gran paso en la evolución de uno de los shooters más icónicos.",
+          "keywords": "counter strike, game play, action games, release date"
         }
       }
     ]
