@@ -91,7 +91,7 @@ const currentPath = Astro.url.pathname;
               alt="LaRepublicaMer Logo" 
               class="w-8 h-8 hidden dark:block"
             />
-            <span class="text-xl font-bold">LaRepublicaMer</span>
+            <span class="text-xl font-bold">LaRepublicaGamer</span>
           </div>
           <button 
             id="closeMenu" 
@@ -131,9 +131,7 @@ const currentPath = Astro.url.pathname;
             <select id="themeSelectorMobile" class="rounded px-2 py-1 bg-white dark:bg-gray-700">
               <option value="light">{t('nav.theme.light')}</option>
               <option value="dark">{t('nav.theme.dark')}</option>
-              <option value="red">{t('nav.theme.red')}</option>
-              <option value="blue">{t('nav.theme.blue')}</option>
-              <option value="green">{t('nav.theme.green')}</option>
+              
             </select>
             <div class="flex space-x-4 justify-center">
               <a href="/en" class={`text-lg ${lang === 'en' ? 'font-bold' : ''}`}>EN</a>
