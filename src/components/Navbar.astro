@@ -61,9 +61,7 @@ const currentPath = Astro.url.pathname;
         <select id="themeSelector" class="rounded px-2 py-1 bg-white dark:bg-gray-700">
           <option value="light">{t('nav.theme.light')}</option>
           <option value="dark">{t('nav.theme.dark')}</option>
-          <option value="red">{t('nav.theme.red')}</option>
-          <option value="blue">{t('nav.theme.blue')}</option>
-          <option value="green">{t('nav.theme.green')}</option>
+         
         </select>
         <div class="space-x-2">
           <a href="/en" class={lang === 'en' ? 'font-bold' : ''}>EN</a>
