@@ -33,9 +33,7 @@
       {
         "id": "v2",
         "name": "SuperSeries: Skill up [CAP #03] - VALORANT",
-        "url_img": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/valorant-pride-1.jpg",
-        "url": "https://www.youtube.com/watch?v=gI-dN2T48vU",
-        "embed": "https://www.youtube.com/embed/gI-dN2T48vU?si=0bKRRHPHFP0X17pV",
+        "yt_id": "gI-dN2T48vU",
         "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !",
         "categories": ["Valorant", "Shooting", "PC", "SuperSeries"],
         "seo": {
@@ -47,9 +45,7 @@
       {
         "id": "v3",
         "name": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8]",
-        "url_img": "/valorant_beta.jpg",
-        "url": "https://www.youtube.com/watch?v=e1ErXujUDE0",
-        "embed": "https://www.youtube.com/embed/e1ErXujUDE0?si=w-SRzxCu2hrOI50e",
+        "yt_id": "e1ErXujUDE0",
         "description": "Yesterday the premiere began and we won our second game against the GetGriddy team. Full game of new first victory as a team in Valorant Beta Premier. Excellent game. On Monday we continue. Greetings",
         "categories": ["Valorant", "Shooting", "PC", "Beta Premier"],
         "seo": {
@@ -65,9 +61,7 @@
       {
         "id": "v4",
         "name": "Reyna - Deathmatch - Valorant Clips",
-        "url_img": "/valorant_reyna.jpg",
-        "url": "https://www.youtube.com/watch?v=7D1B_nsrQTo",
-        "embed": "https://www.youtube.com/embed/7D1B_nsrQTo?si=FHHcl-EICwdaftUQ",
+        "yt_id": "7D1B_nsrQTo",
         "description": "Recopilacion de partida competitiva de Valorant emitida en directo ",
         "categories": ["Valorant", "Action", "PC"],
         "seo": {
@@ -79,9 +73,7 @@
       {
         "id": "v1",
         "name": "Razer - Fracture - Valorant Clips",
-        "url_img": "https://ligadecracks.com/wp-content/uploads/2022/01/Raze_Valorant.webp",
-        "url": "https://www.youtube.com/watch?v=I4lZHxuMnME",
-        "embed": "https://www.youtube.com/embed/I4lZHxuMnME?si=MA1Im_fjy4WEGvnE",
+        "yt_id": "I4lZHxuMnME",
         "description": "Recopilacion de partida competitiva de Valorant emitida en directo ",
         "categories": ["Valorant", "Action", "PC"],
         "seo": {
@@ -93,9 +85,7 @@
       {
         "id": "v2",
         "name": "SuperSeries: Mejorando Habilidades [CAP #03] - VALORANT",
-        "url_img": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/valorant-pride-1.jpg",
-        "url": "https://www.youtube.com/watch?v=gI-dN2T48vU",
-        "embed": "https://www.youtube.com/embed/gI-dN2T48vU?si=0bKRRHPHFP0X17pV",
+        "yt_id": "gI-dN2T48vU",
         "description": "Hola mis SuperGamers, hoy en SuperSeries estamos transmitiendo VALORANT, a ver que tal nos va. No olviden dejar su Like y Seguirme !",
         "categories": ["Valorant", "Shooting", "PC", "SuperSeries"],
         "seo": {
@@ -107,9 +97,7 @@
       {
         "id": "v3",
         "name": "Los Karry Squad V/S GetGriddy - Beta Premier #Valorant [DIVISION 8]",
-        "url_img": "/valorant_beta.jpg",
-        "url": "https://www.youtube.com/watch?v=e1ErXujUDE0",
-        "embed": "https://www.youtube.com/embed/e1ErXujUDE0?si=w-SRzxCu2hrOI50e",
+        "yt_id": "e1ErXujUDE0",
         "description": "Yesterday the premiere began and we won our second game against the GetGriddy team. Full game of new first victory as a team in Valorant Beta Premier. Excellent game. On Monday we continue. Greetings",
         "categories": ["Valorant", "Shooting", "PC", "Beta Premier"],
         "seo": {
