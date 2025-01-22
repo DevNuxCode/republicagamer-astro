@@ -2,18 +2,24 @@
 interface Props {
   id: string;
   name: string;
-  url_img: string;
+  yt_id: string;
   description: string;
   categories: string[];
 }
 
-const { id, name, url_img, description, categories } = Astro.props;
+const { id, name, yt_id, description, categories } = Astro.props;
 const lang = Astro.url.pathname.split('/')[1];
 ---
 
-<a href={`/${lang}/videos/${id}`} class="block">
-  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-colors duration-300 hover:shadow-xl">
-    <img src={url_img} alt={name} class="w-full h-48 object-cover">
+<a href={`/${lang}/videos/${id}`} class="block transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-colors duration-300">
+    <div class="relative overflow-hidden">
+      <img 
+        src={`https://img.youtube.com/vi/${yt_id}/0.jpg`}
+        alt={name} 
+        class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+      >
+    </div>
     <div class="p-4">
       <h3 class="text-xl font-bold mb-2">{name}</h3>
       <p class="text-gray-600 dark:text-gray-300 mb-4">{description}</p>

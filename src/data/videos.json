@@ -4,11 +4,12 @@
       {
         "id": "v4",
         "name": "Reyna - Deathmatch - Valorant Clips",
-        "url_img": "/valorant_reyna.jpg",
+        
         "url": "https://www.youtube.com/watch?v=7D1B_nsrQTo",
-        "embed": "https://www.youtube.com/embed/7D1B_nsrQTo?si=FHHcl-EICwdaftUQ",
+        
         "description": "Valorant competitive match compilation broadcast live ",
         "categories": ["Valorant", "Action", "PC"],
+        "yt_id": "7D1B_nsrQTo",
         "seo": {
           "title": "Reyna - Deatmatch - Valorant Clips - LaRepublicaGamer",
           "description": "Watch the details of the entire game live through my twitch.tv/republicagamercl.",
