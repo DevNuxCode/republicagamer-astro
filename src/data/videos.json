@@ -19,9 +19,9 @@
       {
         "id": "v1",
         "name": "Razer - Fracture - Valorant Clips",
-        "url_img": "https://ligadecracks.com/wp-content/uploads/2022/01/Raze_Valorant.webp",
-        "url": "https://www.youtube.com/watch?v=I4lZHxuMnME",
-        "embed": "https://www.youtube.com/embed/I4lZHxuMnME?si=MA1Im_fjy4WEGvnE",
+        
+        
+        "yt_id": "I4lZHxuMnME",
         "description": "Valorant competitive match compilation broadcast live ",
         "categories": ["Valorant", "Action", "PC"],
         "seo": {
