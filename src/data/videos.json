@@ -2,6 +2,22 @@
   "en": {
     "videos": [
       {
+        "id": "v5",
+        "name": "Valorant - Commpetitive - Valorant Clips",
+        
+        "url": "https://www.youtube.com/watch?v=l3cB_MJnIbg",
+        
+        "description": "Valorant competitive match compilation broadcast live ",
+        "categories": ["Valorant", "Action", "PC"],
+        "yt_id": "l3cB_MJnIbg",
+        "seo": {
+          "title": "Valorant - Competitive - Valorant Clips - LaRepublicaGamer",
+          "description": "Watch the details of the entire game live through my twitch.tv/republicagamercl.",
+          "keywords": "game review, gaming, PC games, action games"
+        }
+      },
+
+      {
         "id": "v4",
         "name": "Reyna - Deathmatch - Valorant Clips",
         
@@ -58,6 +74,21 @@
   },
   "es": {
     "videos": [
+      {
+        "id": "v5",
+        "name": "Valorant - Commpetitive - Valorant Clips",
+        
+        "url": "https://www.youtube.com/watch?v=l3cB_MJnIbg",
+        
+        "description": "Valorant competitive match compilation broadcast live ",
+        "categories": ["Valorant", "Action", "PC"],
+        "yt_id": "l3cB_MJnIbg",
+        "seo": {
+          "title": "Valorant - Competitive - Valorant Clips - LaRepublicaGamer",
+          "description": "Watch the details of the entire game live through my twitch.tv/republicagamercl.",
+          "keywords": "game review, gaming, PC games, action games"
+        }
+      },
       {
         "id": "v4",
         "name": "Reyna - Deathmatch - Valorant Clips",
